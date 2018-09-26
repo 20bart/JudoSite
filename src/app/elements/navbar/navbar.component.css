@@ -8,6 +8,13 @@
   padding-right: 0px;
 }
 
+@media(min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (max-width: 330px) {
   .navbar-brand {
     padding: 15px 10px;
