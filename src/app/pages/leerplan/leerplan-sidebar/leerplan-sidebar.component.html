@@ -1,0 +1,84 @@
+<div class="wrapper">
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="{{sidebarOpen ? '' : 'active'}}">
+
+    <!-- Close button -->
+    <a mat-icon-button (click)="sidebarToggle()"
+       class="float-right sidebar-close-button {{sidebarOpen ? '' : 'active'}}">
+      <mat-icon class="mat-18">close</mat-icon>
+    </a>
+    <!-- Open button -->
+    <a mat-icon-button (click)="sidebarToggle()"
+       class="float-right sidebar-close-button {{sidebarOpen ? 'active' : ''}}">
+      <mat-icon class="mat-18">menu</mat-icon>
+    </a>
+
+    <!-- Menu items -->
+    <ul class="list-unstyled components">
+      <li>
+        <a href="#indelingSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle">Indeling</a>
+        <ul class="collapse list-unstyled"  id="indelingSubmenu">
+          <li><a routerLink="/leerplan/nage-waza">Nage Waza</a></li>
+          <li><a routerLink="/leerplan/katame-waza">Katame Waza</a></li>
+          <li><a routerLink="/leerplan/atemi-waza">Atemi Waza</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#leerstofKyuSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle">Leerstof Kyu Graden</a>
+        <ul class="collapse list-unstyled"  id="leerstofKyuSubmenu">
+          <li><a routerLink="/leerplan/rokkyu">Rokkyu</a></li>
+          <li><a routerLink="/leerplan/gokyu">Gokyu</a></li>
+          <li><a routerLink="/leerplan/yonkyu">Yonkyu</a></li>
+          <li><a routerLink="/leerplan/sankyu">Sankyu</a></li>
+          <li><a routerLink="/leerplan/nikyu">Nikyu</a></li>
+          <li><a routerLink="/leerplan/ikkyu">Ikkyu</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#leerstofDanSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle">Leerstof Dan Graden</a>
+        <ul class="collapse list-unstyled"  id="leerstofDanSubmenu">
+          <li><a routerLink="/leerplan/shodan">Shodan</a></li>
+          <li><a routerLink="/leerplan/nidan">Nidan</a></li>
+          <li><a routerLink="/leerplan/sandan">Sandan</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#kataSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle">Kata</a>
+        <ul class="collapse list-unstyled"  id="kataSubmenu">
+          <li><a routerLink="/leerplan/kata">Kata informatie</a></li>
+          <li><a routerLink="/leerplan/ju-no-kata">Ju No Kata</a></li>
+          <li><a routerLink="/leerplan/nage-no-kata">Nage No Kata</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#diversenSubmenu" data-toggle="collapse"  aria-expanded="false" class="dropdown-toggle">Diversen</a>
+        <ul class="collapse list-unstyled"  id="diversenSubmenu">
+          <li><a routerLink="/leerplan/aglemene-kennis">Algemene kennis</a></li>
+          <li><a routerLink="/leerplan/reishiki">Reishiki - Etiquette in het Kodokan Judo</a></li>
+          <li><a routerLink="/leerplan/woordenlijst">Woordenlijst</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Page Content -->
+  <div id="content" class="{{sidebarOpen ? '' : 'active'}}">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <button type="button"
+                id="sidebarCollapse"
+                class="btn btn-info"
+                (click)="sidebarToggle()">
+          <i class="fas fa-align-left"></i>
+          <span>Toggle Sidebar</span>
+        </button>
+
+      </div>
+    </nav> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,9 +1,10 @@
-import { NavbarComponent } from './elements/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './elements/navbar/navbar.component';
 import { PagesModule } from './pages/pages.module';
 import { MaterialModule } from './shared/material.module';
 
@@ -14,6 +15,7 @@ import { MaterialModule } from './shared/material.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
     PagesModule,
     AppRoutingModule

@@ -7,7 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FotoComponent } from './foto/foto.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
-import { LeerplanComponent } from './leerplan/leerplan.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { OlympiaTrophyComponent } from './olympia-trophy/olympia-trophy.component';
 import { TrainersComponent } from './trainers/trainers.component';
 
@@ -22,16 +22,15 @@ import { TrainersComponent } from './trainers/trainers.component';
     FotoComponent,
     HomeComponent,
     InfoComponent,
-    LeerplanComponent,
     OlympiaTrophyComponent,
-    TrainersComponent
+    TrainersComponent,
+    NotFoundComponent
   ],
   exports: [
     ContactComponent,
     FotoComponent,
     HomeComponent,
     InfoComponent,
-    LeerplanComponent,
     OlympiaTrophyComponent,
     TrainersComponent
   ]

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeerplanComponent } from './leerplan.component';
+import { LeerplanMainComponent } from './leerplan-main.component';
 
-describe('LeerplanComponent', () => {
-  let component: LeerplanComponent;
-  let fixture: ComponentFixture<LeerplanComponent>;
+describe('LeerplanMainComponent', () => {
+  let component: LeerplanMainComponent;
+  let fixture: ComponentFixture<LeerplanMainComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeerplanComponent ]
+      declarations: [ LeerplanMainComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeerplanComponent);
+    fixture = TestBed.createComponent(LeerplanMainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
