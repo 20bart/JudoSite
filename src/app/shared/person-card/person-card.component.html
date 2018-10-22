@@ -1,0 +1,28 @@
+<mat-card>
+
+  <mat-card-header>
+    <div mat-card-avatar
+         class="avatar-image"></div>
+    <mat-card-title>{{person.firstName}} {{person.lastName}} </mat-card-title>
+    <mat-card-subtitle> {{person.role}} </mat-card-subtitle>
+  </mat-card-header>
+
+  <!-- <img mat-card-image
+       [src]="person.imagePath" /> -->
+
+  <mat-card-content *ngIf="person.phone || person.email">
+    <p>
+      <a href="tel:{{person.phone}}" class="no-underline">
+        <mat-icon>phone</mat-icon>
+        <span>{{person.phone | mobile}}</span>
+      </a>
+    </p>
+    <p>
+      <a href="mailto:{{person.email}}" class="no-underline">
+        <mat-icon>mail</mat-icon>
+        <span>{{person.email}}</span>
+      </a>
+    </p>
+  </mat-card-content>
+
+</mat-card>

@@ -1,5 +1,22 @@
 <app-judo-content>
   <div content>
-    trainers works!
+    <section>
+      <h1>Bestuur</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4 board-member"
+             *ngFor="let boardMember of board">
+          <app-person-card [person]="boardMember"></app-person-card>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Trainers</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4 board-member"
+             *ngFor="let trainer of trainers">
+          <app-person-card [person]="trainer"></app-person-card>
+        </div>
+      </div>
+    </section>
   </div>
 </app-judo-content>

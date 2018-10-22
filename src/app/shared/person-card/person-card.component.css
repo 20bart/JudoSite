@@ -1,0 +1,21 @@
+.avatar-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+mat-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.no-underline {
+  color: rgba(0, 0, 0, .87);
+}
+
+.no-underline>mat-icon {
+  color: rgba(0, 0, 0, .54);
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}

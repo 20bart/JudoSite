@@ -10,10 +10,11 @@ import { LeerplanSidebarComponent } from './leerplan-sidebar/leerplan-sidebar.co
 const routes: Routes = [
   { path: '', component: LeerplanSidebarComponent,
     children: [
-      { path: 'main', component: LeerplanMainComponent },
-      { path: 'nage-waza', component: NageWazaComponent },
-      { path: 'katame-waza', component: KatameWazaComponent },
-      { path: 'atemi-waza', component: AtemiWazaComponent },
+      { path: '', pathMatch: 'Full', redirectTo: 'home', data: { breadcrumb: 'Home' } },
+      { path: 'home', component: LeerplanMainComponent, data: { breadcrumb: 'Home' }  },
+      { path: 'nage-waza', component: NageWazaComponent, data: { breadcrumb: 'Nage Waza' }  },
+      { path: 'katame-waza', component: KatameWazaComponent, data: { breadcrumb: 'Katame Waza' }  },
+      { path: 'atemi-waza', component: AtemiWazaComponent, data: { breadcrumb: 'Atemi Waza' }  },
     ]
    }
 ];

@@ -1,3 +1,38 @@
-<p>
-  leerplan-main works!
-</p>
+<article>
+
+  <h1>Leerplan</h1>
+  <p>Hier vindt u een volledig overzicht van de technieken uit het Kodokan Judo terug, ingedeeld per graad. Ook vindt u
+    hier bijkomende zeer nuttige informatie op terug die erg bruikbaar is in je verdere training. Deze kunnen vrij
+    geraadpleegd worden als geheugensteun en aanvulling op je trainingen in de dojo.</p>
+
+</article>
+
+<article>
+
+  <h1>GRADEN</h1>
+  <p>Bij de verdere ontwikkeling van het Kodokan Judo, werd door J. Kano sensei de dan graden ingevoerd. Er bestond
+    toen nog geen uiterlijk onderscheid tussen de yudansha (Dan dragers) en de mudansha (zij zonder Dan graad). Later
+    voerde J. Kano sensei ook het gebruik van de zwarte band in om de yudansha aan te duiden.</p>
+  <p>Met zijn komst naar Europa had <strong>Mikonosuke Kawaishi sensei</strong>, als deel van zijn onderwijsmethode,
+    ook een uitgebreider onderscheidingssysteem ingevoerd. Dit werd gerealiseerd door middel van het gebruik van de
+    huidige, welbekende kleurbanden die de graad van gevorderdheid aantonen. Zelfs nadat later terug de methode van het
+    Kodokan werd gebruikt, bleef deze wijze van onderscheiding in gebruik en werd het officieel opgenomen in het Judo.
+    Meer nog, dit systeem verspreidde zich ook naar andere Japanse krijgskunsten en is tot op heden één van de
+    bekendste eigenschappen van Japanse gendai budo.</p>
+  <p>De oorspronkelijke Kyu graden bestonden eerst uit de 6e Kyu en de 1e Kyu. Kawaishi sensei werkte dit verder uit
+    tot 6 effectieve Kyu graden, met elk zijn respectievelijke kleur. De Dan graden gingen van 1 tot en met 12 (met
+    inbegrip van de 11e Dan). In de onderstaande tabel is een overzicht van alle graden, met hun respectievelijke
+    kleurband.</p>
+
+  <h2>Kyu graden</h2>
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-lg-2"
+         *ngFor="let gordel of gordels">
+      <a routerLink="/leerplan/{{gordel.name}}">
+        <img src="assets/images/gordel/{{gordel.color}}.gif" />
+        <span>{{gordel.kyu}}e kyu</span>
+      </a>
+    </div>
+  </div>
+
+</article>

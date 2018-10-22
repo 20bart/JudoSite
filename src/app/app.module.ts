@@ -1,3 +1,5 @@
+import { BreadcrumbsModule } from 'ng6-breadcrumbs';
+import { ServiceModule } from './services/service.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -7,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './elements/navbar/navbar.component';
 import { PagesModule } from './pages/pages.module';
 import { MaterialModule } from './shared/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MaterialModule } from './shared/material.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    BreadcrumbsModule,
+    HttpClientModule,
     MaterialModule,
+    ServiceModule,
     PagesModule,
     AppRoutingModule
   ],
