@@ -5,7 +5,7 @@
       <img src="../../../assets/images/logojcoz.jpg" height="50px"/>
       Judo Club Olympia Zonhoven
     </a>
-    <a class="navbar-brand d-inline d-lg-none" routerLink="home">
+    <a class="navbar-brand d-inline d-lg-none" routerLink="home" data-toggle="collapse" data-target=".navbar-collapse.show">
       <img src="../../../assets/images/logojcoz.jpg" height="50px"/>
       JCOZ
     </a>
@@ -15,16 +15,16 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+  
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav navbar-right">
         <!-- <li class="nav-item"><a class="nav-link" routerLink="home"><mat-icon>home</mat-icon></a></li> -->
-        <li class="nav-item"><a class="nav-link" routerLink="/info">Info</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/foto">Foto's</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/olympia-trophy">Olympia Trophy</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/trainers">Trainers</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/leerplan">Leerplan</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/info">Info</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/foto">Foto's</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/olympia-trophy">Olympia Trophy</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/trainers">Trainers</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/leerplan">Leerplan</a></li>
+        <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/contact">Contact</a></li>
       </ul>
     </div>
 </nav>
